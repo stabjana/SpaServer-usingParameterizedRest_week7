@@ -209,32 +209,3 @@ const jsonData = await data.json();
 ```js
 fetch("http://localhost:3000/api/computers", options);
 ```
-
-storageEnginePath: /Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer
-Error: Cannot find module '/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/ComputerShopStorage/OrdersStorage/orderStorageConfig.json'
-Require stack:
-
-- /Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/storageLayer.js
-- /Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/dataStorageLayer.js
-- /Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/restServer.js
-  at Function.\_resolveFilename (node:internal/modules/cjs/loader:1244:15)
-  at Function.\_load (node:internal/modules/cjs/loader:1070:27)
-  at TracingChannel.traceSync (node:diagnostics_channel:322:14)
-  at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
-  at Module.require (node:internal/modules/cjs/loader:1335:12)
-  at require (node:internal/modules/helpers:136:16)
-  at new StorageLayer (/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/storageLayer.js:24:31)
-  at new Datastorage (/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/dataStorageLayer.js:16:25)
-  at startServer (/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/restServer.js:62:21)
-  at Object.<anonymous> (/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/restServer.js:21:9) {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: [
-  '/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/storageLayer.js',
-  '/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/Storage_Engines/storageLayer/dataStorageLayer.js',
-  '/Users/s2400784/REACT24/Node Advanced/Week4/Parameterized_RestServerWithOrderTests/restServer.js'
-  ]
-  }
-              ********************************************
-              Error: File "configComputerOrders.json" not found!
-              ********************************************
-  ➜ Parameterized_RestServerWithOrderTests
