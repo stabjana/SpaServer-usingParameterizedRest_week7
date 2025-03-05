@@ -18,7 +18,12 @@ td {
 div {
     margin: 0.5em;
     padding: 1em;
-    border: 0.1em solid black;
+}
+
+button {
+    margin: 0.5em;
+    padding: 0.5em;
     border-radius: 5%;
-    box-shadow: 1 2px 2px 2px lightgray;
+    background-color: lightblue;
+    box-shadow: 2px 2px 5px lightgray;
 }
