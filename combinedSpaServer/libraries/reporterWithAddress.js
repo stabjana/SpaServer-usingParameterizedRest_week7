@@ -36,7 +36,7 @@ module.exports = class Reporter {
 
     async createProductLine(product) {
         const computerData = await fetch(`${this.#computerBaseUrl}/${product.productId}`);
-        const computer = await productData.json();
+        const computer = await computerData.json();
 
         return {
             productId: computer.id,
