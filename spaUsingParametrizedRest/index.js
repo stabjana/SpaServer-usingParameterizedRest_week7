@@ -7,6 +7,7 @@ const app = express();
 const { port, host } = require('./config.json');
 const fetch = require('./libraries/fetchLib');
 const createFullReport = require('./libraries/reporter');
+const createReportWithAddress = require('./libraries/reporterWithAddress');
 const { getAddressOfOrder } = require('./libraries/addressLibrary'); // no parameterized version
 
 app.use(express.json());
@@ -28,6 +29,11 @@ app.get('/report/:id', (req, res) =>
     fetch(`${baseRestUrl}/${req.params.id}`)
         .then(data => data.json())
         .then(result => res.json(createFullReport(result))));
+
+app.get('/fullreport/:id', (req, res) =>
+    fetch(`${baseRestUrl}/${req.params.id}`)
+        .then(data => data.json())
+        .then(result => res.json(createReportWithAddress(result))));
 
 app.get('/address/:id', async (req, res) => {
     fetch(`${baseRestUrl}/${req.params.id}`)
