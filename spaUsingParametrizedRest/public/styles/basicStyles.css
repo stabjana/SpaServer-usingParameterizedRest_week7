@@ -1,3 +1,24 @@
-h1{
-    color:green;
+h1 {
+    color: green;
+}
+
+table,
+th,
+td {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    padding: 0.25em
+}
+
+#total {
+    font-weight: bold;
+    background-color: lightpink;
+}
+
+div {
+    margin: 0.5em;
+    padding: 1em;
+    border: 0.1em solid black;
+    border-radius: 5%;
+    box-shadow: 1 2px 2px 2px lightgray;
 }
